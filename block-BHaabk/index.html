@@ -5,16 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Exercise 1 | Flexbox</title>
+    <script src="https://kit.fontawesome.com/721dc3a700.js" crossorigin="anonymous"></script>
+    <title>Exercise Flexbox</title>
 </head>
 <body>
-    <header class="header clearfix">
-        <div class="container">
-            <div class="logo">
-                <a href="#">
-                    <img src="assets/altcampus-logo.svg" alt="Logo">
-                </a>
-            </div>
+    <header class="header">
+        <div class="container flex">
+            <a class="brand" href="#">
+                <img src="assets/altcampus-logo.svg" alt="altcampus-logo">
+            </a>
             <nav class="nav">
                 <a href="#">Home</a>
                 <a href="#">About</a>
@@ -23,33 +22,72 @@
         </div>
     </header>
     <main>
-        <section class="container">
-            <div class=" main-section">
-                <div class="main-left">
+        <section class="main-section">
+            <div class="container flex">
+                <div class="main left">
                     <h2>
                         This is the heading
                     </h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam sed iste 
-                        laborum earum eos facilis perferendis magni consequatur accusantium, 
-                        laudantium est quas! Repudiandae cum esse minus ipsa laborum nam magnam!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit eligendi tempore, 
+                        doloremque saepe aliquam quae praesentium numquam, reiciendis deserunt aut quas ullam 
+                        modi, id fuga necessitatibus consequatur autem. Doloribus, distinctio.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit eligendi tempore, 
+                        doloremque saepe aliquam quae praesentium numquam, reiciendis deserunt aut quas ullam 
+                        modi, id fuga necessitatibus consequatur autem. Doloribus, distinctio.
                     </p>
                 </div>
-                <div class="main-right">
-                    <img src="assets/1.jpg" alt="pic1">
+                <div class="main right">
+                    <img src="assets/7.jpg" alt="praesentium">
                 </div>
             </div>
         </section>
-        <section class="container">
+        <section>
             <div class="gallery">
-                <img src="assets/2.jpg" alt="">
-                <img src="assets/3.jpg" alt="">
-                <img src="assets/4.jpg" alt="">
-                <img src="assets/5.jpg" alt="">
-                <img src="assets/6.jpg" alt="">
-                <img src="assets/7.jpg" alt="">
+                <div class="container">
+                    <h2>
+                        Gallery
+                    </h2>
+                    <div class="flex">
+                        <div class="gal">
+                            <img src="assets/1.jpg" alt="">
+                        </div>
+                        <div class="gal">
+                            <img src="assets/2.jpg" alt="">
+                        </div>
+                        <div class="gal">
+                            <img src="assets/3.jpg" alt="">
+                        </div>
+                        <div class="gal">
+                            <img src="assets/4.jpg" alt="">
+                        </div>
+                        <div class="gal">
+                            <img src="assets/5.jpg" alt="">
+                        </div>
+                        <div class="gal">
+                            <img src="assets/6.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
+    <footer>
+        <div class="footer">
+            <nav class="container">
+                <a href="#">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-twitter-square"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-instagram-square"></i>
+                </a>
+            </nav>
+        </div>
+    </footer>
 </body>
 </html>
