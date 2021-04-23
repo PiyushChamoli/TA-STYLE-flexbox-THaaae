@@ -55,7 +55,7 @@ table {
     box-sizing: border-box;
 }
 .container{
-    max-width: 1250px;
+    max-width: 1300px;
     margin: 0 auto;
     padding: 0 30px;
 }
@@ -67,46 +67,125 @@ table {
 body{
     font-family: 'Roboto', sans-serif;
 }
+.padding{
+    padding: 60px 30px;
+}
 
 /*Header*/
 
 .header{
     background-color: #222946;
-    padding: 15px;
+    padding: 15px 0;
 }
 .brand img{
-    width: 110px;
+    width: 140px;
 }
 .nav a{
     text-decoration: none;
-    font-size: 19px;
+    font-size: 20px;
+    margin-left: 36px;
     color: white;
-    margin-left: 16px;
-    text-transform: capitalize;
-    vertical-align: middle;
 }
 .nav img{
-    width: 25px;
-    height: 25px;
     vertical-align: middle;
 }
+.nav .user span{
+    margin-right: 10px;
+}
 
-/*Aside Section*/
+/*Aside*/
 
 .aside{
-    width: 50%;
-    height: 70vh;
-    margin-top: 30px;
     background-color: #a3caea;
+    padding: 30px;
+    flex: 0 1 30%;
+    align-self: stretch;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.aside-nav{
+    display: flex;
+    flex-direction: column;
+}
+.aside-nav a{
+    text-decoration: none;
+    color: #22396a;
+    font-weight: 700;
+    padding: 16px;
+    border-radius: 5px;
+}
+.aside-nav img{
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.aside-nav .active{
+    border: 2px solid #FF7B29;
+    color: #FF7B29;
+}
+.aside-nav .active img{
+    color: #FF7B29;
+}
+.btn{
+    border: 0;
+    box-shadow: none;
+    padding: 16px 32px;
+    width: 100%;
+    background-color: #ffffff;
+    font-size: 20px;
+    border-radius: 5px;
+    text-align: left;
+    font-weight: 700;
+    color: #22396a;
+}
+.btn img{
+    margin-right: 10px;
+    vertical-align: middle;
 }
 
 /*Article*/
 
 .article{
-    width: 50%;
-    background-color: #f2f8fd;
+    flex: 0 1 65%;
+    border-radius: 10px;
+    background-color: #e3e9ee;
+    padding: 20px;
+}
+.article h1{
+    font-size: 40px;
+    margin: 16px 0;
+    color: #22396a;
+    font-weight: 700;
+}
+.article p{
+    font-size: 17px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    color: #22396a;
+}
+.article a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 17px 40px;
+    background-color: #58b768;
+    margin: 25px 0;
+    border-radius: 7px;
+    color: white;
+    font-weight: 600;
+    box-shadow: 0 4px 12px #58b768;
 }
 
-.article img{
-    width: 400px
+footer{
+    background-color: #22396a;
+    padding: 35px 0;
+}
+footer small{
+    font-size: 30px;
+    color: #a7abbf;
+}
+footer nav a{
+    font-size: 30px;
+    margin-left: 20px;
+    color: #a7abbf;
 }
